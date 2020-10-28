@@ -51,6 +51,6 @@ app.delete('/weather/:id', (req, res) => {
 
 
 
-app.listen(3000, () => {
+app.listen(8080, () => {
     console.log("Server is up and runing!")
 });
