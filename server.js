@@ -10,7 +10,7 @@ app.set('view engine', 'hbs');
 app.use(express.static(publicDirectoryPath));
 app.use(bodyParser.json());
 
-
+const port = process.env.PORT || 3000
 app.get('', (req, res) => { 
     // req = request
     // res = respond
@@ -51,6 +51,6 @@ app.delete('/weather/:id', (req, res) => {
 
 
 
-app.listen(8080, () => {
+app.listen(port, () => {
     console.log("Server is up and runing!")
 });
